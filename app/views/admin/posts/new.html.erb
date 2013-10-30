@@ -1,0 +1,7 @@
+<%= form_for @post, url: {action: 'create'} do |f| %>
+Title: <%= f.text_field :title  %>
+Content: <%= f.text_field :content  %>
+Publish:  <%= f.check_box :is_published %>
+<%= f.submit "Save" %>
+
+<% end %>
